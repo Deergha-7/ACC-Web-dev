@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<title>Register</title>
+    <head>
+   <body style="position: relative;
+        background-color: aqua;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;"></body>
+        <style>
+    ::selection {color:#ececec;
+        background-color: #00b3ff;
+    }
+    .form{
+        position: relative;
+        background-color: #f2f3f7;
+        width: 100%;
+        max-width: 500px;
+        border-radius: 25px ;
+        box-shadow: -3px 3px 10px -5px rgba(0,0,0,0.2);
+        padding: 30px 30px;
+    }
+    .form h2{
+        font-size: 30px;
+        font-weight: 700;
+        
+    }
+    .form p{
+        font-size: 14px;
+        padding-bottom: 8px;
+    
+    
+    }
+    .form form .profile-img
+    {
+        position: absolute;
+        top: 0;
+        right:0;
+        width: 75px;
+        height: 75px;
+        margin: 18px 30px;
+        background:#f2f3f7;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/768px-Circle-icons-pofile.svg.png");
+        border-radius: 50%;
+        border:4px solid #006692;
+       
+    }
+    .file-upload{
+        position:absolute;
+        top:0;
+        right:15px;
+        height: 65px;
+        width: 65px;
+        display: flex;
+        border-radius: 50%;
+        border:2px solid #d2d3d7 ;
+        overflow: hidden;
+        background:linear-gradient(to bottom, #006692, #f2f3f7,50%);
+        background-size : 100% 200%;
+        transition: all 1s;
+        font-size: 14px;
+        cursor: pointer;
+     }
+     </style>
+</head>
+<body>
+    <div class="form">
+        <h2>Signup form</h2>
+        <p>It's free and always</p>
+        <form action="">
+            <div class="error-text">Error</div>           
+            <div class="grid-details">
+            </div>
+                <div class="input">
+                    <lable>First Name</lable>
+                    <input tyoe="text" name="fname" placeholder="First Name" required pattern="[a-zA-Z'-\s]*">
+                </div>
+                <div class="input">
+                    <lable>Last Name</lable>
+                    <input type="text" name="lname" placeholder="Last Name" required pattern="[a-zA-Z'-\s]*">
+                    <div class="input">
+                        <lable>Email</lable>
+                        <input type="email" name="email" placeholder="Enter your main address" required>  
+                        <div class="input">
+                            <lable>Phone number</lable>
+                            <input type="phone" name="phone" placeholder="Enter your phone number" 
+                            required pattern="[0-9]{10}" oninvalid="this.setcustomvalidity('Enter 11 digits Number')"  oninput="this.setCustomValidity('')">          
+                        </div>
+                            <div class="grid_details"> 
+                            <div class="input">
+                                <lable>Password</lable>
+                                <input tyoe="text" name="pass" placeholder="Password" required pattern="[a-zA-Z'-\s]*">
+                            </div>
+                            <div class="input">
+                                <lable>Confrim Password</lable>
+                                <input type="text" name="cpass" placeholder="Confrim Password" 
+                                required pattern="[a-zA-Z'-\s]*">
+            </div>
+            <div clas="profile-img">
+                <div class="file-upload">
+                    <input type="file" id="image-preview" name="image" class="file-input" required oninvalid="this.setcustomvalidity('Select an image')" oninput="this.setCustomValidity('')" >
+               <i class="fas fa-user-edit"></i>
+             </div> 
+            </div>
+            <div class="submit">
+                <input type="submit" value="Signup Now" class="button">
+            </div>
+            <div class="link">Already Registered? <a href="">Login Now</a></div>
+        </form>
+    </div>
+</body>
+</html>
