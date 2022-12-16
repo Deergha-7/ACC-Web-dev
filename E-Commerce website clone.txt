@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        /* General Styles */
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+/* Header Styles */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+header {
+  padding: 10px 0;
+  background-color:  rgb(0, 77, 128);
+  color: rgb(11, 7, 7);
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* Nav Styles */
+nav {
+  padding: 10px 0;
+  background-color: rgb(0, 77, 128);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+/* Main Styles */
+main {
+  padding: 10px;
+}
+
+.hero {
+  background-color: plum;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  width: 30%;
+  margin: 10px;
+  background-color: #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.product img {
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.buy-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+/* Footer Styles */
+footer {
+  padding: 10px 0;
+  text-align: center;
+  background-color: #444444;
+  color: #fff;
+}
+    </style>
+  <head>
+    <title>E-Commerce Site Clone</title>
+
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>E-Commerce Site Clone</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <main>
+        <div class="hero">
+          <h2>WELCOME TO OUR E-COMMERCE SITE!</h2>
+        </div>
+        <section>
+          <h2>OUR PRODUCTS</h2>
+          <div class="product-list">
+            <div class="product">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDUSMM6Us7ubfElhnn_ni3wHCpmGQsGUd6Kg&usqp=CAU" alt="Product 1" />
+              <h4>Strawberry Fruit, 200 g</h4>
+              <p> Extremely juicy and syrupy, these conical heart shaped fruits have seeds on the skin that give them a unique texture.</p>
+              <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeWKSjPnsuJhJCFFV6ypI6Bs4ys8pDpINGIw&usqp=CAU" alt="Product 2" />
+              <h4>Mix Dry Fruits, 1 kg</h4>
+              <p> DryFruit Basket brings to you Sprinkles - the ready-to-use toppings for your favorite desserts, such as, milkshakes, ice creams and halwa.</p>
+              <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product">
+              <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSM7Ho9-Cc-ZgnUkgWg9yaPk3qy6tYdw_n1v1Y884MA2QcA-GHorCYYf2igmorsL4MTW7GicZxhQWla3NWOYj3lIT8YrTN2xbVwdQhA1q3JofnR_CEeKEL6&usqp=CAE" alt="Product 3" />
+              <h4>MevoFit Black Ultra Smartwatch</h4>
+              <p> Sleek, Stylish, Powerful, Responsive, Feature Loaded Smartwatch. Comfortable Design With Soft & Skin Friendly Tpu Medical Grade Strap With Easy To Fix & Secure Buckle. </p>
+              <button class="buy-btn">Buy Now</button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>Copyright 2022 E-Commerce Site Clone</p>
+      </footer>
+    </div>
+  </body>
+</html>
